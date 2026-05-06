@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi-Container App</title>
+</head>
+<body>
+    <h1>Frontend (Nginx) Running 🚀</h1>
+    <button onclick="loadData()">Fetch Data</button>
+    <p id="result"></p>
+
+    <script>
+        function loadData() {
+            fetch('http://localhost:5000/data')
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById('result').innerText = data.message;
+                })
+                .catch(err => {
+                    document.getElementById('result').innerText = "Error connecting backend";
+                });
+        }
+    </script>
+</body>
+</html>
