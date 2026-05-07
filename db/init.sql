@@ -4,4 +4,4 @@ CREATE TABLE greetings (
 );
 
 INSERT INTO greetings (message) 
-VALUES ('Frontend, Backend, and MySQL Database are working successfully 🚀');
+VALUES ('Frontend, Backend, and MySQL Database are working successfully');
