@@ -4,4 +4,4 @@ CREATE TABLE greetings (
 );
 
 INSERT INTO greetings (message) 
-VALUES ('Hello from MySQL inside Docker 🚀');
+VALUES ('Frontend, Backend, and MySQL Database are working successfully 🚀');
